@@ -40,7 +40,7 @@ def perform_login(request):
         user_id=authenticate(request,username=Username,password=Password)
         if user_id is not None:
             login(request,user_id)
-            return HttpResponseRedirect(reverse("admin_dashboard"))
+            return render(request,"in.html")
         else:
             return render(request,"signin.html")
 def admin_dashboard(request):
