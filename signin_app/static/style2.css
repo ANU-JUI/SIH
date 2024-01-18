@@ -1,0 +1,28 @@
+body{
+   
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url('Untitled design(1).png');
+    background-position:cover;
+    position: relative;
+    
+}
+.abc{
+    
+    padding-bottom:70px;
+  }
+  h1{
+    padding-left: 40%;
+    padding-top:70px;
+    padding-bottom: 20px;
+    color:white;
+  }
+  .image{
+    position: absolute;
+    left: 6px;
+    top:4px;
+    height: 180px;
+    width: 260px;
+  } 
+
+  p{
+    padding-left: 40%;
+  }

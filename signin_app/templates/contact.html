@@ -1,0 +1,60 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'contact.css' %}"/>
+</head>
+<body>
+    <img src="{% static 'logo-no-background.png' %}" class="logo" alt="">
+    <nav>
+        
+        <ul>
+            <li><a href={%url 'ino' %}>Home</a></li>
+            <li><a href={%url 'about' %} active>About</a></li>
+            <li><a href={%url 'contact' %}>Contact Us</a></li>
+            <li><a href={%url 'index' %}>LOGOUT</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1><center>Contact Us</center></h1>
+        <h2>Address:</h2>
+        <p>Canal S Rd,Beleghata,Kolkata-700015,West Bengal,India</p>
+
+        <h2>Contact Information:</h2>
+       <p>  Email: codecrafters0001@gmail.com <br> <br>
+         Phone:
+            <ul>
+            <li>(+91)-8100473796</li> 
+            <li>(+91)-6290647765</li>
+            <li>(+91)-8334993782</li>
+            <li>(+91)-9163393327</li>
+            <li>(+91)-9800279089</li>
+            <li>(+91)-8927845242</li> </ul> </p>
+
+        <div class="social-links">
+            <h2>Follow Us:</h2> <br>
+            <a href="https://www.facebook.com/rounak639/" target="_blank">
+                <img src="{%static 'fblogo.png' %}" alt="Facebook"class="social-logo">
+                Facebook
+            </a>  
+            <a href="https://www.instagram.com/i_am_rounak_chakraborty/" target="_blank">
+                <img src="{%static 'instalogo.jpg' %}" alt="Facebook" height="30px" width="30px" class="social-logo">
+                Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/rounak-4544a3254/" target="_blank">
+                <img src="{%static 'linkedinlogo.png' %}" alt="Facebook" height="30px" width="30px" class="social-logo">
+                LinkedIn
+            </a>
+            <a href=" https://github.com/Binary-Speakers" target="_blank">
+                <img src="{%static 'githublogo.png' %}" alt="Facebook" height="30px" width="30px" class="social-logo">
+                Github</a>
+                <a href="https://twitter.com/RounakC99209175" target="_blank">
+                    <img src="{%static 'twitterlogo.png' %}" alt="Facebook" height="30px" width="30px" class="social-logo">
+                    Twitter</a>
+        </div>
+    </div>
+</body>
+</html>

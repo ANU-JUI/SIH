@@ -1,0 +1,45 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phis detector</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'about.css' %}"/>
+</head>
+
+<body>
+    <div class="container">
+    <nav>
+        <img src="{% static 'logo-no-background.png' %}" class="logo" alt="">
+        
+        <ul>
+            <li><a href={%url 'ino' %}>Home</a></li>
+            <li><a href={%url 'about' %}>About</a></li>
+            <li><a href={%url 'contact' %}>Contact Us</a></li>
+            <li><a href={%url 'index' %}>LOGOUT</a></li>
+        </ul>
+    </nav>
+    <div class="container-1">
+
+        <section class="About">
+            <h1 class="abt">About us</h1>
+            <div class="about-info">
+                <p>
+                    At Phishary Detection, we're on a mission to protect businesses and individuals from the ever-evolving threat of phishing attacks. With cyber threats becoming more sophisticated by the day,
+                    our dedicated team of experts is committed to staying one step ahead to keep your digital world
+                    safe.With years of experience in cybersecurity and a relentless pursuit of innovation, we've
+                    developed cutting-edge solutions that effectively identify and neutralize phishing threats. Our
+                    state-of-the-art technology, powered by advanced machine learning and threat intelligence, is
+                    designed to outsmart even the most cunning cybercriminals.
+                </p>
+                <div class="social-icons">
+                    <a href=""><img src="{%static 'dribble.png' %}" alt=""></a><a href=""><img src="{%static 'instalogo.jpg' %}" alt=""></a><a href=""><img src="{%static 'Telegram_logo.svg.webp' %}" alt=""></a>
+                </div>
+        </section>
+    </div>
+    </div>
+</body>
+
+</html>

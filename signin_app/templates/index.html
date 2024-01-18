@@ -1,0 +1,167 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}"/>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container1">
+        <nav>
+            
+            
+            <ul>
+                <li><a href={%url 'login_page' %}>Home</a></li>
+                <li><a href={%url 'login_page' %}>About</a></li>
+                <li><a href={%url 'login_page' %}>Contact Us</a></li>
+                <li><a href={%url 'login_page' %}>LOGIN</a></li>
+            </ul>
+        </nav>
+
+        <div class="log">
+            <img src="{% static 'logo-no-background.png' %}" class="logo1" alt="">
+        </div>
+
+        <div class="typed">
+            <h2><span class="auto-type"></span></h2>
+        </div>
+
+        <div class="about">
+            <p>Phisigon is a Physing website <span class="space">detector which has an</span> 100% chance of telling you
+                whether <span class="space">website</span> is a phyishing website <span class="space">or</span> not and
+                protect you from cyberscam or getting scammed <span class="space2">!!</span></p>
+        </div>
+
+        <a href={%url 'login_page'%}><button>Check the website</button></a>
+
+        <div class="social-icons">
+            <a href=""><img src="{%static 'dribble.png' %}" alt=""></a>
+            <a href=""><img src="{%static 'instagram.png' %}" alt=""></a>
+            <a href=""><img src="{%static 'telegram.png' %}" alt="" class="tele"></a>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="visions">
+        <p>Our Goal is to create a secure and free environment for everyone</p>
+    </div>
+
+    <div class="container2">
+        <h1 class="heading">our services</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="{%static 'fblogo.png' %}" class="iii" alt="">
+                <h3>1st service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illo enim </p>
+                <a href="" class="button">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="{%static 'instalogo.jpg' %}" class="iii" alt="">
+                <h3>2nd service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illo enim </p>
+                <a href="" class="button">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="{%static 'instalogo.jpg' %}" class="iii" alt="">
+                <h3>3rd service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illo enim </p>
+                <a href="" class="button">read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="{% static 'background.png' %}" class="image" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                        saepe provident dolorem a quaerat quo error facere nihil deleniti
+                        eligendi ipsum adipisci, fugit, architecto amet asperiores
+                        doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name1">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="{% static 'background.png' %}" class="image" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                        saepe provident dolorem a quaerat quo error facere nihil deleniti
+                        eligendi ipsum adipisci, fugit, architecto amet asperiores
+                        doloremque deserunt eum nemo.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name1">Marnie Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <h1 class="testi">Our Testimonial</h1>
+
+    <footer>
+        <h1 class="quick">Quick Links</h1>
+        <div class="lists">
+            <li>
+                <ul><a href={%url 'ino' %}>Home</a></ul>
+                <ul><a href={%url 'about' %}>About</a></ul>
+                <ul><a href={%url 'contact' %}>Contact Us</a></ul>
+                <ul><a href={%url 'login_page' %}>LOGIN</a></ul>
+            </li>
+        </div>
+
+        <div class="social">
+            <img src="{%static 'instalogo.jpg' %}" alt="">
+            <img src="{%static 'linkedinlogo.png' %}" alt="">
+            <img src="{%static 'fblogo.png' %}" alt="">
+        </div>
+    </footer>
+
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+
+    <img src="{% static 'logo-no-background.png' %}" class="logofinale" alt="">
+
+    <script src="{%static 'cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js' %}"></script>
+    <script src="{%static 'phis.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Thank You for choosing Phisigon", " Welcome to Phisigon......"],
+            typespeed: 150,
+            backspeed: 150,
+            loop: true
+
+        })
+    </script>
+</body>
+
+</html>

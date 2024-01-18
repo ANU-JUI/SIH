@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phis detector</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'phis.css' %}"/>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="{% static 'logo-no-background.png' %}" class="image" alt="">
+            <ul>
+                <li><a href={%url 'ino' %}>Home</a></li>
+                <li><a href={%url 'about' %}>About</a></li>
+                <li><a href={%url 'contact' %}>Contact Us</a></li>
+                <li><a href={%url 'index' %}>LOGOUT</a></li>
+            </ul>
+        </nav>
+
+        <div class="check-container">
+            <p class="txt">Phishing Detector</p>
+            <input type="text" placeholder="Enter the url" autocomplete="off" required class="url">
+            <button class="submit-btn">Submit</button>
+        </div>
+
+        <div class="social-icons">
+            <a href=""><img src="{%static 'dribble.png' %}" alt=""></a>
+            <a href=""><img src="{%static 'instalogo.jpg' %}" alt=""></a>
+            <a href=""><img src="{%static 'Telegram_logo.svg.webp' %}" alt=""></a>
+        </div>
+
+        <div class="alert">
+            <span class="alert-message">The website is x% phishing free</span>
+            <button class="cont">Continue</button>
+        </div>
+    </div>
+</body>
+</html>

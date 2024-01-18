@@ -1,0 +1,127 @@
+body{
+    background-image: url('Untitled design(1).png');
+    background-size: cover;margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+span{
+    position: absolute;
+}
+.name{
+    margin-top: 20px;
+    margin-left: 100px;
+   font-size: 35px;
+   color: white;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+.logo{
+    position: absolute;
+    height: 180px;
+    width: 260px;
+    left: 5px;
+    top:3px;
+   }
+   
+   nav ul{
+       flex: 1;
+       text-align: right;
+       padding-right: 30px;
+   }
+   
+   nav ul li{
+       display: inline-block;
+       list-style-type: none;
+       margin: 10px 30px;
+   }
+   
+   nav ul li a{
+       color: white;
+       text-decoration: none;
+       position: relative;
+   }
+   
+   nav ul li a::after{
+       content: '';
+       width: 0;
+       height: 3px;
+       position: absolute;
+       bottom: 0;
+       left: 50%;
+       transform: translateX(-50%);
+       background: #fff;
+       transition: width 0.3s;
+   }
+   
+   nav ul li a:hover:after
+   ,nav ul li a:active
+   {
+       width: 50%;
+   
+   }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color:beige;
+}
+ul{
+    color: white;
+}
+a{
+    font-size: 20px;
+
+
+}
+h1 {
+    border-radius: 5px;
+    background-color: blue;
+    width:500px;
+    margin-left: 100px;
+    font-size: 40px;
+    color: wheat;
+    ;
+}
+h2{
+    color: wheat;
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+    color:whitesmoke ;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    color:whitesmoke;
+    text-decoration: none;
+}
+.social-links a:hover::after {
+    color: wheat;
+}
+.social-logo{
+    display: flex;
+    flex-direction: column;
+    height: 45px;width: 45px;
+    border-radius: 10px;
+    vertical-align: bottom;
+}
+.social-logo:hover{
+    height:50px;
+    width:50px; 
+}

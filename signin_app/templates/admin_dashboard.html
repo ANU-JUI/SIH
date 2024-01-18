@@ -1,0 +1,17 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <title>admin dashboard</title>
+</head>
+<body >
+    <div class="a">
+        <img src="{% static 'logo-no-background.png' %}" class="image">
+    You are Logged In <br><br><br>
+    Thank You for the time being <br><br><br>
+    <a href="{% url 'perform_logout' %}" class="b">LogOut</a>
+    </div>
+</body>
