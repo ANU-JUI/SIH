@@ -66,9 +66,11 @@ def perform_logout(request):
 def perform_reset(request):
     if(request.method=='POST'):
         try:
-            user=User.objects.get(username="username")
-            user.set_password('new_password')
+            W=request.POST.get("username")
+            user=User.objects.get(email=W)
+            P=request.POST.get("new_password")
+            user.set_password(P)
             user.save()
         except User.DoesNotExist:
-            return HttpResponse("Invalid username") 
+            return HttpResponse("Account does not exist with the email") 
     return render(request,"login.html")

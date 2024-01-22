@@ -7,3 +7,7 @@ function my(){
  const hi=document.getElementById("username").value;
  alert ("WELCOME "+hi)
 }
+function qw()
+{
+    alert("PASSWORD RESET SUCCESSFULL");
+}
