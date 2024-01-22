@@ -10,7 +10,7 @@ body{
     padding-bottom:70px;
   }
   h1{
-    padding-left: 40%;
+    padding-left: 35%;
     padding-top:70px;
     padding-bottom: 20px;
     color:white;
@@ -24,5 +24,14 @@ body{
   } 
 
   p{
+    padding-left: 40%;
+  }
+  .r
+  {
+    background-color: azure;
+    padding: 30%;
+  }
+  .x
+  {
     padding-left: 40%;
   }

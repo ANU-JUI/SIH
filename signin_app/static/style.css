@@ -15,7 +15,7 @@ body{
     color:white;
   }
   
-  p{
+  .p{
     padding-top:15px;
     padding-left: 35%;
   }
@@ -35,3 +35,8 @@ body{
     height: 180px;
     width: 260px;
   } 
+  .p1
+  {
+    padding-top:15px;
+    padding-left: 175%;
+  }
