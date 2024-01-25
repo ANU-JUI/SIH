@@ -57,7 +57,7 @@ def perform_login(request):
             login(request,user_id)
             return render(request,"in.html")
         else:
-            return render(request,"signin.html")
+            return HttpResponse("Invalid username or password !!")
 def admin_dashboard(request):
     return render(request,"in.html")
 def perform_logout(request):
