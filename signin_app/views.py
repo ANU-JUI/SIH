@@ -75,23 +75,7 @@ def perform_reset(request):
         except User.DoesNotExist:
             return HttpResponse("Account does not exist with the email") 
     return render(request,"login.html")
-def upload_video(request):
-    if request.method=='GET':
-        return render (request,'upload.html')
-def process_video(request):
-    if request.method=='POST' and request.FILES['input_video']:
-        input_video=request.FILES['input_video']
-        cap=cv2.VideoCapture(input_video)
-        while cap.isOpened():
-            ret,frame=cap.read()
-            if not ret:
-                break
-            processed_frame=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-            buffer=cv2.imencode('.jpg',processed_frame)
-            encoded_frame=base64.b64encode(buffer).decode('utf-8')
-            return JsonResponse({'processed_frame':encoded_frame})
-        return render(request,'process.html')
-    
+
     
 
         
