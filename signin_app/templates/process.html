@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Process Video</title>
+</head>
+<body>
+    <input type="file" id="input_video" accept="video/mp4,video/mov">
+    <button id="process_button">Process Video</button>
+    
+    <video id="processed_video" width="640" height="480" controls></video>
+
+    <script>
+        document.getElementById('process_button').addEventListener('click', function() {
+            let inputVideo = document.getElementById('input_video').files[0];
+            let formData = new FormData();
+            formData.append('input_video', inputVideo);
+        
+            fetch('/process-video/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('processed_video').src = 'data:image/jpeg;base64,' + data.processed_frame;
+            });
+        });
+    </script>
+</body>
+</html>

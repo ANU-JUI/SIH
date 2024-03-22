@@ -18,5 +18,7 @@ urlpatterns = [
     path("reset/<uidb64>/<token>/", auth_views.PasswordResetConfirmView.as_view(),name="password_rest_confirm "),
     path("reset_password_complete/", auth_views.PasswordResetCompleteView.as_view(),name="password_reset_complete"),
     path("reset",views.reset,name="reset"),
-    path("perform_reset",views.perform_reset,name="perform_reset")
+    path("perform_reset",views.perform_reset,name="perform_reset"),
+    path("upload_video",views.upload_video, name="upload_video"),
+    path("process_video",views.process_video,name="process_video"),
 ]
